@@ -4,10 +4,39 @@
 
         <!-- Name -->
         <div>
-            <x-input-label for="name" :value="__('Name')" />
+            <x-input-label for="name" :value="__('Имя')" />
             <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
+
+        <!-- Middlename -->
+        <div>
+            <x-input-label for="middlename" :value="__('Фамилия')" />
+            <x-text-input id="middlename" class="block mt-1 w-full" type="text" name="middlename" :value="old('middlename')" required autofocus />
+            <x-input-error :messages="$errors->get('middlename')" class="mt-2" />
+        </div>
+
+        <!-- Lastname -->
+        <div>
+            <x-input-label for="lastname" :value="__('Отчество')" />
+            <x-text-input id="lastname" class="block mt-1 w-full" type="text" name="lastname" :value="old('lastname')" required autofocus  />
+            <x-input-error :messages="$errors->get('lastname')" class="mt-2" />
+        </div>
+
+        <!-- School -->
+        <div>
+            <x-input-label for="school" :value="__('Школа')" />
+            <x-text-input id="school" class="block mt-1 w-full" type="text" name="school" :value="old('school')" required autofocus  />
+            <x-input-error :messages="$errors->get('school')" class="mt-2" />
+        </div>
+
+        <!-- Class -->
+        <div>
+            <x-input-label for="class" :value="__('Класс')" />
+            <x-text-input id="class" class="block mt-1 w-full" type="text" name="class" :value="old('class')" required autofocus/>
+            <x-input-error :messages="$errors->get('class')" class="mt-2" />
+        </div>
+
 
         <!-- Email Address -->
         <div class="mt-4">
