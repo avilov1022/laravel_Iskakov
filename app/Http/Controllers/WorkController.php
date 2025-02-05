@@ -10,9 +10,10 @@ class WorkController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        //
+    public function index(){
+        $works = Work::all();
+
+        return view('works.index', compact('works'));
     }
 
     /**
